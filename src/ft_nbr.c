@@ -6,7 +6,7 @@
 /*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 11:16:41 by sinlee            #+#    #+#             */
-/*   Updated: 2023/05/19 14:37:21 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/05/19 14:57:06 by sinlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr_u_len(unsigned int n, int *len)
 	ft_putchar_len((n % 10) + '0', len);
 }
 
-char	*ft_nbr_base_len(unsigned int nbr, char *base)
+static char	*ft_nbr_base_len(unsigned int nbr, char *base)
 {
 	unsigned int	length;
 	char			*ans;
