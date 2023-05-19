@@ -6,7 +6,7 @@
 #    By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/19 10:16:35 by sinlee            #+#    #+#              #
-#    Updated: 2023/05/19 11:28:10 by sinlee           ###   ########.fr        #
+#    Updated: 2023/05/19 15:05:30 by sinlee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ clean:
 	$(RM) $(OBJS)
 
 fclean: clean
+	cd libft && $(MAKE) fclean
 	$(RM) $(NAME)
 
 re: fclean all
